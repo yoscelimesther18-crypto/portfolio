@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Yoscelim Pérez — Fullstack Developer / Product Engineer enfocada en resultados.">
+  <meta property="og:title" content="Yoscelim Pérez — Fullstack Developer / Product Engineer">
+  <meta property="og:description" content="Portafolio profesional de Yoscelim Pérez. Proyectos reales y demos AWS.">
+  <meta property="og:image" content="img/og-image.webp">
+  <meta property="og:type" content="website">
+  <title>Yoscelim Pérez — Fullstack Developer / Product Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Navegación Principal -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="navbar__logo">YP</a>
+    <button class="navbar__toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span class="navbar__toggle-icon"></span>
+    </button>
+    <ul class="navbar__menu" role="menubar">
+      <li><a href="#hero" role="menuitem">Inicio</a></li>
+      <li><a href="#projects" role="menuitem">Proyectos</a></li>
+      <li><a href="#skills" role="menuitem">Habilidades</a></li>
+      <li><a href="#about" role="menuitem">Sobre Mí</a></li>
+      <li><a href="#contact" role="menuitem">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Sección Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <p class="hero__greeting animate-fade-in" style="--delay: 0s">Hola, soy</p>
+        <h1 class="hero__name animate-fade-in" style="--delay: 0.2s">Yoscelim Pérez</h1>
+        <h2 class="hero__title animate-fade-in" style="--delay: 0.4s">Fullstack Developer / Product Engineer</h2>
+        <p class="hero__description animate-fade-in" style="--delay: 0.6s">
+          Transformo ideas en productos digitales que generan impacto real. Desarrollo soluciones fullstack enfocadas en resultados, combinando código limpio con arquitecturas cloud escalables en AWS.
+        </p>
+        <div class="hero__cta animate-fade-in" style="--delay: 0.8s">
+          <a href="#contact" class="btn btn--primary">Contáctame</a>
+          <a href="#projects" class="btn btn--outline">Ver Proyectos</a>
+        </div>
+      </div>
+      <div class="hero__visual" aria-hidden="true">
+        <!-- Formas geométricas decorativas renderizadas vía CSS pseudo-elements -->
+      </div>
+    </section>
+
+    <!-- Galería de Proyectos -->
+    <section class="projects" id="projects">
+      <h2 class="section-title">Proyectos</h2>
+      <div class="projects__grid">
+
+        <!-- Proyecto: Eclaire -->
+        <article class="project-card" data-category="existing">
+          <div class="project-card__image">
+            <svg viewBox="0 0 640 400" aria-hidden="true">
+              <rect width="640" height="400" fill="#1a2035"/>
+              <circle cx="320" cy="160" r="50" fill="none" stroke="#6c63ff" stroke-width="2" opacity="0.5"/>
+              <text x="320" y="170" text-anchor="middle" fill="#6c63ff" font-family="Inter, sans-serif" font-size="24" font-weight="600">🧁</text>
+              <text x="320" y="240" text-anchor="middle" fill="#e4e8f1" font-family="Inter, sans-serif" font-size="20" font-weight="600">Eclaire</text>
+              <text x="320" y="270" text-anchor="middle" fill="#8892a8" font-family="Inter, sans-serif" font-size="14">Pastelería Artesanal</text>
+            </svg>
+            <span class="project-card__badge">Proyecto Real</span>
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Eclaire</h3>
+            <p class="project-card__description">Sitio web elegante para una pastelería artesanal. Diseño visual atractivo con navegación intuitiva y presentación de productos.</p>
+            <div class="project-card__tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="https://yoscelimesther18-crypto.github.io/eclaire/index.html"
+               class="project-card__link" target="_blank" rel="noopener">
+              Ver Proyecto →
+            </a>
+          </div>
+        </article>
+
+        <!-- Proyecto: Chocolate Web -->
+        <article class="project-card" data-category="existing">
+          <div class="project-card__image">
+            <svg viewBox="0 0 640 400" aria-hidden="true">
+              <rect width="640" height="400" fill="#1a2035"/>
+              <circle cx="320" cy="160" r="50" fill="none" stroke="#00d4aa" stroke-width="2" opacity="0.5"/>
+              <text x="320" y="170" text-anchor="middle" fill="#00d4aa" font-family="Inter, sans-serif" font-size="24" font-weight="600">🍫</text>
+              <text x="320" y="240" text-anchor="middle" fill="#e4e8f1" font-family="Inter, sans-serif" font-size="20" font-weight="600">Chocolate Web</text>
+              <text x="320" y="270" text-anchor="middle" fill="#8892a8" font-family="Inter, sans-serif" font-size="14">Experiencia Interactiva</text>
+            </svg>
+            <span class="project-card__badge">Proyecto Real</span>
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Chocolate Web</h3>
+            <p class="project-card__description">Experiencia web interactiva con temática de chocolate. Interfaz inmersiva que combina diseño creativo con funcionalidad moderna.</p>
+            <div class="project-card__tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="https://yoscelimesther18-crypto.github.io/chocolate-web/"
+               class="project-card__link" target="_blank" rel="noopener">
+              Ver Proyecto →
+            </a>
+          </div>
+        </article>
+
+        <!-- Proyecto: NotasApp -->
+        <article class="project-card" data-category="existing">
+          <div class="project-card__image">
+            <svg viewBox="0 0 640 400" aria-hidden="true">
+              <rect width="640" height="400" fill="#1a2035"/>
+              <circle cx="320" cy="160" r="50" fill="none" stroke="#ff6b6b" stroke-width="2" opacity="0.5"/>
+              <text x="320" y="170" text-anchor="middle" fill="#ff6b6b" font-family="Inter, sans-serif" font-size="24" font-weight="600">📝</text>
+              <text x="320" y="240" text-anchor="middle" fill="#e4e8f1" font-family="Inter, sans-serif" font-size="20" font-weight="600">NotasApp</text>
+              <text x="320" y="270" text-anchor="middle" fill="#8892a8" font-family="Inter, sans-serif" font-size="14">Productividad Personal</text>
+            </svg>
+            <span class="project-card__badge">Proyecto Real</span>
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">NotasApp</h3>
+            <p class="project-card__description">Aplicación de notas enfocada en productividad. Permite crear, organizar y gestionar notas de forma rápida y sencilla.</p>
+            <div class="project-card__tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+            <a href="https://yoscelimesther18-crypto.github.io/NotasApp/"
+               class="project-card__link" target="_blank" rel="noopener">
+              Ver Proyecto →
+            </a>
+          </div>
+        </article>
+
+        <!-- Proyecto Demo AWS: Chatbot de Atención al Cliente -->
+        <article class="project-card" data-category="demo">
+          <div class="project-card__image">
+            <svg viewBox="0 0 640 400" aria-hidden="true">
+              <rect width="640" height="400" fill="#1a2035"/>
+              <circle cx="320" cy="160" r="50" fill="none" stroke="#ff9900" stroke-width="2" opacity="0.5"/>
+              <text x="320" y="170" text-anchor="middle" fill="#ff9900" font-family="Inter, sans-serif" font-size="24" font-weight="600">🤖</text>
+              <text x="320" y="240" text-anchor="middle" fill="#e4e8f1" font-family="Inter, sans-serif" font-size="20" font-weight="600">Chatbot AWS</text>
+              <text x="320" y="270" text-anchor="middle" fill="#8892a8" font-family="Inter, sans-serif" font-size="14">Amazon Lex + Lambda</text>
+            </svg>
+            <span class="project-card__badge">Demo AWS</span>
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Chatbot de Atención al Cliente</h3>
+            <p class="project-card__description">Chatbot inteligente de atención al cliente que utiliza procesamiento de lenguaje natural para responder consultas frecuentes, gestionar tickets de soporte y escalar casos complejos a agentes humanos.</p>
+            <div class="project-card__tech">
+              <span class="tech-tag">Amazon Lex</span>
+              <span class="tech-tag">AWS Lambda</span>
+              <span class="tech-tag">DynamoDB</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-detail">
+            <p class="project-detail__description">Este proyecto demuestra la implementación de un chatbot conversacional para atención al cliente utilizando Amazon Lex como motor de comprensión de lenguaje natural. Las funciones Lambda procesan las intenciones del usuario y consultan DynamoDB para obtener información relevante en tiempo real.</p>
+            <div class="project-detail__architecture">
+              <p>Arquitectura: Usuario → Amazon Lex → AWS Lambda → DynamoDB</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto Demo AWS: Plataforma Serverless de Procesamiento de Datos -->
+        <article class="project-card" data-category="demo">
+          <div class="project-card__image">
+            <svg viewBox="0 0 640 400" aria-hidden="true">
+              <rect width="640" height="400" fill="#1a2035"/>
+              <circle cx="320" cy="160" r="50" fill="none" stroke="#ff9900" stroke-width="2" opacity="0.5"/>
+              <text x="320" y="170" text-anchor="middle" fill="#ff9900" font-family="Inter, sans-serif" font-size="24" font-weight="600">⚡</text>
+              <text x="320" y="240" text-anchor="middle" fill="#e4e8f1" font-family="Inter, sans-serif" font-size="20" font-weight="600">Serverless Pipeline</text>
+              <text x="320" y="270" text-anchor="middle" fill="#8892a8" font-family="Inter, sans-serif" font-size="14">S3 + Lambda + DynamoDB</text>
+            </svg>
+            <span class="project-card__badge">Demo AWS</span>
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">Plataforma Serverless de Procesamiento de Datos</h3>
+            <p class="project-card__description">Pipeline serverless de procesamiento de datos que ingesta, transforma y sirve información a través de una API REST. Diseñado para escalar automáticamente según la demanda sin gestión de servidores.</p>
+            <div class="project-card__tech">
+              <span class="tech-tag">AWS S3</span>
+              <span class="tech-tag">AWS Lambda</span>
+              <span class="tech-tag">DynamoDB</span>
+              <span class="tech-tag">API Gateway</span>
+              <span class="tech-tag">Node.js</span>
+            </div>
+          </div>
+          <div class="project-detail">
+            <p class="project-detail__description">Esta plataforma implementa un flujo completo de procesamiento de datos sin servidores. Los archivos se cargan en S3, lo que dispara funciones Lambda para transformar y almacenar los datos en DynamoDB. Una API REST construida con API Gateway expone los datos procesados al frontend.</p>
+            <div class="project-detail__architecture">
+              <p>Arquitectura: S3 → AWS Lambda → DynamoDB → API Gateway → Frontend</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Habilidades Técnicas -->
+    <section class="skills" id="skills">
+      <h2 class="section-title">Habilidades Técnicas</h2>
+      <div class="skills__grid">
+
+        <!-- Frontend -->
+        <div class="skills__category">
+          <h3 class="skills__category-title">Frontend</h3>
+          <div class="skills__items">
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><polygon points="16,2 2,30 30,30" fill="none" stroke="#e34f26" stroke-width="2"/><text x="16" y="24" text-anchor="middle" fill="#e34f26" font-size="10" font-weight="bold">5</text></svg>
+              <span class="skill-item__name">HTML5</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0.1s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="4" fill="none" stroke="#264de4" stroke-width="2"/><text x="16" y="21" text-anchor="middle" fill="#264de4" font-size="10" font-weight="bold">3</text></svg>
+              <span class="skill-item__name">CSS3</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0.2s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="4" fill="none" stroke="#f7df1e" stroke-width="2"/><text x="16" y="22" text-anchor="middle" fill="#f7df1e" font-size="12" font-weight="bold">JS</text></svg>
+              <span class="skill-item__name">JavaScript</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0.3s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><circle cx="16" cy="16" r="4" fill="#61dafb"/><ellipse cx="16" cy="16" rx="14" ry="5" fill="none" stroke="#61dafb" stroke-width="1.5"/><ellipse cx="16" cy="16" rx="14" ry="5" fill="none" stroke="#61dafb" stroke-width="1.5" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="14" ry="5" fill="none" stroke="#61dafb" stroke-width="1.5" transform="rotate(120 16 16)"/></svg>
+              <span class="skill-item__name">React</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skills__category">
+          <h3 class="skills__category-title">Backend</h3>
+          <div class="skills__items">
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0.4s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><circle cx="16" cy="16" r="12" fill="none" stroke="#68a063" stroke-width="2"/><text x="16" y="20" text-anchor="middle" fill="#68a063" font-size="8" font-weight="bold">N.js</text></svg>
+              <span class="skill-item__name">Node.js</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0.45s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><circle cx="12" cy="16" r="8" fill="none" stroke="#3776ab" stroke-width="2"/><circle cx="20" cy="16" r="8" fill="none" stroke="#ffd43b" stroke-width="2"/></svg>
+              <span class="skill-item__name">Python</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0.5s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="4" fill="none" stroke="#336791" stroke-width="2"/><circle cx="16" cy="14" r="4" fill="none" stroke="#336791" stroke-width="1.5"/><path d="M12 22c0-2.2 1.8-4 4-4s4 1.8 4 4" fill="none" stroke="#336791" stroke-width="1.5"/></svg>
+              <span class="skill-item__name">PostgreSQL</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0.55s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="12" fill="none" stroke="#00684a" stroke-width="2"/><path d="M12 20l4-8 4 8" fill="none" stroke="#00684a" stroke-width="2" stroke-linecap="round"/></svg>
+              <span class="skill-item__name">MongoDB</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0.6s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><path d="M8 8h16v16H8z" fill="none" stroke="#cb3837" stroke-width="2"/><text x="16" y="20" text-anchor="middle" fill="#cb3837" font-size="8" font-weight="bold">API</text></svg>
+              <span class="skill-item__name">REST APIs</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0.65s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="4" fill="none" stroke="#000" stroke-width="2"/><text x="16" y="21" text-anchor="middle" fill="#fff" font-size="8" font-weight="bold">Ex</text></svg>
+              <span class="skill-item__name">Express.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud / AWS -->
+        <div class="skills__category">
+          <h3 class="skills__category-title">Cloud / AWS</h3>
+          <div class="skills__items">
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0.7s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><path d="M6 20c0-5.5 4.5-10 10-10s10 4.5 10 10" fill="none" stroke="#ff9900" stroke-width="2"/><path d="M4 20h24" stroke="#ff9900" stroke-width="2" stroke-linecap="round"/></svg>
+              <span class="skill-item__name">AWS Cloud</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0.75s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect x="3" y="8" width="26" height="16" rx="3" fill="none" stroke="#ff9900" stroke-width="2"/><path d="M10 16h12M16 12v8" stroke="#ff9900" stroke-width="1.5"/></svg>
+              <span class="skill-item__name">Amazon Lex</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0.8s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><path d="M16 4l12 8v8l-12 8-12-8V12z" fill="none" stroke="#ff9900" stroke-width="2"/><text x="16" y="20" text-anchor="middle" fill="#ff9900" font-size="7" font-weight="bold">λ</text></svg>
+              <span class="skill-item__name">AWS Lambda</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0.85s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><ellipse cx="16" cy="20" rx="12" ry="6" fill="none" stroke="#3f8624" stroke-width="2"/><path d="M4 14v6M28 14v6" stroke="#3f8624" stroke-width="2"/><ellipse cx="16" cy="14" rx="12" ry="6" fill="none" stroke="#3f8624" stroke-width="2"/></svg>
+              <span class="skill-item__name">AWS S3</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0.9s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect x="6" y="6" width="20" height="20" rx="3" fill="none" stroke="#4053d6" stroke-width="2"/><path d="M11 12h10M11 16h10M11 20h7" stroke="#4053d6" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span class="skill-item__name">DynamoDB</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 0.95s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect x="4" y="8" width="24" height="16" rx="3" fill="none" stroke="#ff9900" stroke-width="2"/><path d="M10 16h12" stroke="#ff9900" stroke-width="1.5"/><circle cx="16" cy="16" r="2" fill="#ff9900"/></svg>
+              <span class="skill-item__name">API Gateway</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 1.0s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect x="6" y="4" width="20" height="24" rx="3" fill="none" stroke="#ff9900" stroke-width="2"/><path d="M11 10h10M11 14h10M11 18h6" stroke="#ff9900" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <span class="skill-item__name">CloudFormation</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 1.05s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><circle cx="16" cy="16" r="12" fill="none" stroke="#ff9900" stroke-width="2"/><path d="M10 16h12M16 10v12" stroke="#ff9900" stroke-width="1.5"/></svg>
+              <span class="skill-item__name">EC2</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Herramientas -->
+        <div class="skills__category">
+          <h3 class="skills__category-title">Herramientas</h3>
+          <div class="skills__items">
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 1.1s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><circle cx="16" cy="16" r="6" fill="none" stroke="#f05032" stroke-width="2"/><circle cx="16" cy="16" r="2" fill="#f05032"/><line x1="16" y1="10" x2="16" y2="4" stroke="#f05032" stroke-width="2"/><circle cx="16" cy="4" r="2" fill="#f05032"/></svg>
+              <span class="skill-item__name">Git</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 1.15s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="4" fill="none" stroke="#007acc" stroke-width="2"/><text x="16" y="21" text-anchor="middle" fill="#007acc" font-size="9" font-weight="bold">VS</text></svg>
+              <span class="skill-item__name">VS Code</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 1.2s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="4" fill="none" stroke="#6c63ff" stroke-width="2"/><text x="16" y="21" text-anchor="middle" fill="#6c63ff" font-size="8" font-weight="bold">K</text></svg>
+              <span class="skill-item__name">Kiro</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 1.25s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="4" fill="none" stroke="#181717" stroke-width="2"/><circle cx="16" cy="14" r="5" fill="none" stroke="#e4e8f1" stroke-width="1.5"/><path d="M10 24c0-3.3 2.7-6 6-6s6 2.7 6 6" fill="none" stroke="#e4e8f1" stroke-width="1.5"/></svg>
+              <span class="skill-item__name">GitHub</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 1.3s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect x="4" y="8" width="24" height="16" rx="3" fill="none" stroke="#e4e8f1" stroke-width="2"/><text x="16" y="20" text-anchor="middle" fill="#e4e8f1" font-size="7" font-weight="bold">&gt;_</text></svg>
+              <span class="skill-item__name">Terminal</span>
+            </div>
+            <div class="skill-item scroll-reveal" style="--reveal-delay: 1.35s">
+              <svg class="skill-item__icon" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="4" fill="none" stroke="#cb3837" stroke-width="2"/><text x="16" y="21" text-anchor="middle" fill="#cb3837" font-size="7" font-weight="bold">npm</text></svg>
+              <span class="skill-item__name">npm</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section class="about" id="about">
+      <h2 class="section-title">Sobre Mí</h2>
+      <div class="about__grid">
+        <div class="about__image scroll-reveal">
+          <svg viewBox="0 0 400 400" aria-hidden="true" style="border-radius: 20px; width: 100%; max-width: 350px; height: auto;">
+            <rect width="400" height="400" rx="20" fill="#1a2035"/>
+            <circle cx="200" cy="150" r="60" fill="none" stroke="#6c63ff" stroke-width="2" opacity="0.4"/>
+            <circle cx="200" cy="140" r="35" fill="none" stroke="#8892a8" stroke-width="2"/>
+            <path d="M140 260c0-33.1 26.9-60 60-60s60 26.9 60 60" fill="none" stroke="#8892a8" stroke-width="2"/>
+            <text x="200" y="320" text-anchor="middle" fill="#6c63ff" font-family="Inter, sans-serif" font-size="16" font-weight="600"></text>
+          </svg>
+        </div>
+        <div class="about__content scroll-reveal">
+          <p class="about__text">
+            Soy Yoscelim Pérez, Fullstack Developer y Product Engineer con un enfoque claro en resultados. Mi pasión es transformar ideas en productos digitales funcionales que generen impacto real. Combino experiencia en desarrollo frontend y backend con conocimientos sólidos en servicios cloud de AWS para construir soluciones escalables y eficientes. Cada línea de código que escribo está orientada a resolver problemas concretos y entregar valor medible.
+          </p>
+          <div class="about__metrics">
+            <div class="metric">
+              <span class="metric__number" data-count="3">0</span>
+              <span class="metric__label">Proyectos Publicados</span>
+            </div>
+            <div class="metric">
+              <span class="metric__number" data-count="5">0</span>
+              <span class="metric__label">Tecnologías AWS</span>
+            </div>
+            <div class="metric">
+              <span class="metric__number" data-count="100">0</span>
+              <span class="metric__label">% Enfoque en Resultados</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contact">
+      <h2 class="section-title">Contacto</h2>
+      <div class="contact__grid">
+        <form class="contact__form" id="contact-form" action="https://formspree.io/f/YOUR_ID" method="POST">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn btn--primary">Enviar Mensaje</button>
+        </form>
+        <div class="contact__info">
+          <div class="contact__links">
+            <a href="https://github.com/yoscelimesther18-crypto" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/yoscelim-perez-jimenez-72475b184" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <p class="contact__phone">Tel: 3169897732</p>
+          <p class="contact__phone"><a href="mailto:yoscelimesther18@gmail.com" style="color: var(--color-text-secondary);">yoscelimesther18@gmail.com</a></p>
+          <noscript>
+            <p>El formulario de contacto requiere JavaScript. <a href="mailto:yoscelimesther18@gmail.com">Enviar correo directamente</a></p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Yoscelim Pérez. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/form.js" defer></script>
+</body>
+</html>

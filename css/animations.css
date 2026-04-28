@@ -1,0 +1,98 @@
+/* ============================================
+   Keyframes
+   ============================================ */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   Hero Entrance Animation
+   Uses --delay custom property for staggered
+   fade-in across hero elements.
+   Total hero animation duration ≤ 1.5s
+   (0.6s animation + up to 0.8s delay = 1.4s)
+   ============================================ */
+.animate-fade-in {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+/* ============================================
+   Scroll Reveal
+   Base state: opacity 1 — content is visible
+   without JavaScript (Requirement 10.5).
+   JS adds .scroll-reveal--hidden on init,
+   then .scroll-reveal--visible when in view.
+   ============================================ */
+.scroll-reveal {
+  opacity: 1;
+}
+
+.scroll-reveal--hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--transition-slow, 500ms) ease,
+              transform var(--transition-slow, 500ms) ease;
+  transition-delay: var(--delay, 0s);
+}
+
+.scroll-reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   Interactive Element Transitions (200-500ms)
+   Requirement 8.3
+   ============================================ */
+.project-card,
+.skill-item,
+.btn,
+.navbar__menu a,
+.contact__links a,
+.tech-tag {
+  transition: all var(--transition-base, 300ms) ease;
+}
+
+/* ============================================
+   Reduced Motion
+   Respect user preference for reduced motion.
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in {
+    animation: none;
+    opacity: 1;
+  }
+
+  .scroll-reveal--hidden {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .project-card,
+  .skill-item,
+  .btn,
+  .navbar__menu a,
+  .contact__links a,
+  .tech-tag {
+    transition: none;
+  }
+}
